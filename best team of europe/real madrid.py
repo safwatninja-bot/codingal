@@ -1,7 +1,7 @@
-def add(P, Q):
-    return P + Q
+def total_calc(bill_amount, tip_perc):
+    total = bill_amount*(1 + 0.01*tip_perc)
+    total = round(total, 2)
+    print(f"please pay ${total}")
 
-num_1 = int (input ("please enter first number: "))
-num_2 = int (input ("please enter second number: "))
-print (add(num_1, num_2))
 
+total_calc(150,20)
